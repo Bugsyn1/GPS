@@ -3,6 +3,7 @@
    --cian: #41F6D7;
    --border-cian: #B8FFEC;
    --basic-grey: #7E7E82;
+   --background-color: #F2F2F2;
 }
 
 
@@ -38,7 +39,7 @@
 
 
 body {
-   background-color: white;
+   background-color: var(--background-color);
 
 }
 
@@ -227,8 +228,15 @@ button {
    .navigation-form__items-settings {
       margin-left: auto;
 
-
    }
+  
+  .nav__item{
+     flex-wrap: wrap;
+  }
+  .nav__item .nav__list:last-child{
+   margin-left:16px;
+   flex: 0 1 auto;
+  }
 
    .heading {
       width: 300px;
