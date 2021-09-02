@@ -74,7 +74,7 @@ button {
    padding-left: 0px;
    align-items: flex-start;
    margin-left: 16px;
-
+   
 
 }
 
@@ -94,6 +94,8 @@ button {
 .nav__list:hover {
    border: 2px solid var(--border-cian);
    border-radius: 6px;
+   background-color: white;
+ 
 }
 
 .about__read-more {
@@ -229,14 +231,22 @@ button {
       margin-left: auto;
 
    }
+.navigation-form__items{
+   max-width: 1120px;
+   margin-left: auto;
+}
+
   
   .nav__item{
+  
      flex-wrap: wrap;
+
   }
   .nav__item .nav__list:last-child{
-   margin-left:16px;
+  margin-left:16px;
    flex: 0 1 auto;
   }
+
 
    .heading {
       width: 300px;

@@ -1,0 +1,161 @@
+:root {
+   --basic-black: #1B1C21;
+   --cian: #41F6D7;
+   --border-cian: #B8FFEC;
+   --basic-grey: #7E7E82;
+   --background-color: #F2F2F2;
+}
+
+
+@font-face {
+   font-family: 'TT Lakes Bold';
+   src: url('TTLakes-Bold.eot');
+   src: url('TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+      url('TTLakes-Bold.woff') format('woff'),
+      url('TTLakes-Bold.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'TT Lakes Medium';
+   src: url('TTLakes-Medium.eot');
+   src: url('TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+      url('TTLakes-Medium.woff') format('woff'),
+      url('TTLakes-Medium.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'TT Lakes Regular';
+   src: url('TTLakes-Regular.eot');
+   src: url('TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+      url('TTLakes-Regular.woff') format('woff'),
+      url('TTLakes-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+.body {
+   margin: 0;
+   padding: 0;
+   
+}
+
+.wrapper{
+   max-width: 320px;
+}
+
+.menu-header__list {
+   /*Контейнер*/
+   display: flex;
+   list-style-type: none;
+   margin-left: 0;
+   padding-left: 0;
+   align-items: center;
+}
+
+.menu-header__item:nth-child(1) {
+   margin-left: 24px;
+   margin-right: 17px;
+}
+
+.menu-header__item:nth-child(2) {
+   flex-grow: 1;
+   
+}
+
+.menu-header__item:nth-child(3) {
+   margin-right: 24px;
+}
+
+.wrap-main {
+   /*Обертка main*/
+   margin-left: 24px;
+   margin-bottom: 264px;
+   display: flex;
+  flex-direction: column;
+}
+
+.content__list {
+   /*Список*/
+   margin-left: 0;
+   padding-left: 0;
+
+}
+
+.content__item:nth-child(1)::before {
+   content: url("../GPS 1.4/img/highlight.svg");
+   display: block;
+   transform: translate(-25px, 20px);
+   height: 32px;
+   width: 4px;
+
+}
+
+.content__item {
+   list-style-type: none;
+   margin-bottom: 32px;
+}
+
+button {
+   border: none;
+   outline: none;
+   background: transparent;
+   font-size: 16px;
+   font-family: "TT Lakes Medium", Helvetica, sans-serif;  
+ 
+}
+
+button:hover, :focus{
+  opacity: 0.5;
+  transition-duration: 0.7s;
+}
+
+.wrap-footer{
+   margin-left: 24px;
+}
+.menu-footer__list{
+   margin-left: 0;
+   padding-left: 0;
+   display: flex;
+   list-style-type: none;
+   align-items: center;
+
+}
+.menu-footer__item{
+margin-right: 16px;
+}
+
+.contacts__mail{
+   margin-bottom: 12px;
+}
+.contacts__mail-link {
+font-size: 16px;
+color:var(--basic-black);
+font-family:'TT Lakes Medium',Arial, Helvetica;
+text-decoration: none;
+}
+
+.contacts__tel-link{
+   font-size: 24px;
+   font-family:'TT Lakes Bold',Arial, Helvetica;
+   color:var(--basic-black);
+   text-decoration: none;
+}
+.language__list{
+   margin-left: 0;
+   padding-left: 0;
+   display: flex;
+   list-style-type: none;
+   margin-right: 7px;
+   text-transform:uppercase;
+   font-size: 16px;
+  
+}
+.language__item{
+   color:var(--basic-black);
+   font-family:'TT Lakes Medium',Arial, Helvetica;
+margin-right: 7px;
+}
