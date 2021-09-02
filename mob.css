@@ -86,7 +86,7 @@
 }
 
 .content__item:nth-child(1)::before {
-   content: url("../GPS 1.4/img/highlight.svg");
+   content: url("../GPS/img/highlight.svg");
    display: block;
    transform: translate(-25px, 20px);
    height: 32px;
