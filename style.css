@@ -4,6 +4,7 @@
    --border-cian: #B8FFEC;
    --basic-grey: #7E7E82;
    --background-color: #F2F2F2;
+   --button-color:#FF3E79;
 }
 
 
@@ -82,7 +83,7 @@ left:-20px;
 }
 
 
-button {
+.nav__button, .content__button {
    outline: none;
    border: 0;
    background: transparent;
@@ -96,12 +97,12 @@ button {
    width:40px;
    height:40px;
    border-radius: 50%;
-   background-color:#FF3E79;
+   background-color:var(--button-color);
    border:none;
 }
 
 
-.nav__list button {
+.nav__button {
    color: var(--basic-grey);
 }
 
@@ -132,7 +133,7 @@ button {
 }
 
 
-.nav button:hover {
+.nav__button:hover {
    border: 2px solid var(--border-cian);
    border-radius: 6px;
    background-color: white;
@@ -192,7 +193,7 @@ margin:0 auto;
    margin-right: 140px;
 }
 
-.content__read-more button::before {
+.content__read-more .content__button::before {
    content: url('../GPS/img/icon.png');
 margin:0;
 padding:0;
@@ -284,7 +285,7 @@ flex-grow:1;
       margin-top: 14px;
       margin-left: 50px
    }
-
+ 
 
 }
 
