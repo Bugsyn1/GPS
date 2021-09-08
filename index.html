@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -9,101 +9,112 @@
     <title>GPS</title>
 </head>
 
-<body>
+<body class="body">
     <header class="header">
-        <div class="navigation-form">
-            <div class="navigation-form__wrapper">
-                <nav class="navigation-form__items">
-                    <div class="navigation-form__items-menu navigation-form--size--l">
-                        <button type="button">
-                            <img src="../GPS/img/burger.svg" alt="menu">
-                        </button>
-                    </div>
-                    <div class="navigation-form__divider navigation-form--size--m">
-                        <img src="../GPS/img/divider.svg" alt="divider">
-                    </div>
-                    <div class="navigation-form__items-logo navigation-form--size--l">
-                        <button type="button">
-                            <img src="../GPS/img/Group.png" alt="logo">
+            <nav class="header-nav">
+
+                <section class="nav-left">
+
+                    <div class="menu-burger">
+                        <button class="button-mod" type="button">
+                            <img class="button-mod-burger__img" src="../GPS/img/burger icon.svg" alt="menu">
                         </button>
                     </div>
 
-                    <div class="navigation-form__contacts navigation-form--size--m">
-                        <button type="button">
-                            <img src="../GPS/img/call.svg" alt="contacts">
+
+                    <div class="logo">
+                        <a href="#" class="logo__link">
+                            <img class="logo__img" src="../GPS/img/Group.png" alt="logo">
+                        </a>
+                    </div>
+
+                </section>
+
+                <section class="nav-middle">
+
+                    <div class="buttons-group">
+
+                        <button class="button-mod" type="button">
+                            <img class="button-mod__call-img" src="../GPS/img/icon call.svg" alt="contacts">
+                        </button>
+
+
+                        <button class="button-mod" type="button">
+                            <img class="button-mod__messages-img" src="../GPS/img/message icon.svg" alt="message">
+                        </button>
+
+
+                        <button class="button-mod" type="button">
+                            <img class="button-mod__profile-img" src="../GPS/img/Group.svg" alt="">
                         </button>
                     </div>
-                    <div class="navigation-form__messages navigation-form--size--m">
-                        <button type="button">
-                            <img src="../GPS/img/chat.svg" alt="messages">
+                </section>
+
+                <section class="nav-right">
+                    <div class="end-buttons">
+                        <span class="end-buttons-discripton-1">Оставить заявку</span>
+                        <button class="button-mod" type="button">
+                            <img class="button-mod__settings-img" src="../GPS/img/Group.svg" alt="settings">
+                        </button>
+
+                        <span class="end-buttons-discripton-2">Статус ремонта</span>
+                        <button class="button-mod">
+                            <img class="button-mod__search-img" src="../GPS/img/seach icon.svg" alt="search">
                         </button>
                     </div>
-                    <div class="navigation-form__profile navigation-form--size--m">
-                        <button type="button">
-                            <img src="../GPS/img/profile.svg" alt="profile">
-                        </button>
-                    </div>
-                    <div class="navigation-form__divider navigation-form--size--l">
-                        <img src="../GPS/img/divider.svg" alt="divider">
-                    </div>
-                    <div class="navigation-form__items-settings">
-                        <button type="button">
-                            <img src="../GPS/img/repair.png" alt="settings">
-                        </button>
-                    </div>
-                    <div class="navigation-form__items-search">
-                        <button type="button">
-                            <img src="../GPS/img/checkstatus.png" alt="search">
-                        </button>
-                    </div>
-                </nav>
-            </div>
-        </div>
+                </section>
+
+            </nav>
+
+
     </header>
 
     <main class="main">
+        <div class="main-wrapper"> 
         <div class="heading">
             <h1>Услуги и сервисы</h1>
         </div>
-        <nav class="nav">
-            <ul class="nav__item">
-                <li class="nav__list">
-                    <button type="button">
-                        Ремонтируемые устройства
-                    </button>
-                </li>
-                <li class="nav__list">
-                    <button type="button">
-                        Дополнительные услуги
-                    </button>
-                </li>
-                <li class="nav__list">
-                    <button type="button">
-                        Цены на услуги
-                    </button>
-                </li>
-                <li class="nav__list">
-                    <button type="button">
-                        Адреса сервисных центров
-                    </button>
-                </li>
-                <li class="nav__list">
-                    <button type="button">
-                        Специальные цены
-                    </button>
-                </li>
-                <li class="nav__list">
-                    <button type="button">
-                        Отзывы
-                    </button>
-                </li>
-            </ul>
-        </nav>
+        <div class="wrap">
+            <nav class="nav">
+                <ul class="nav__item">
+                    <li class="nav__list">
+                        <button type="button">
+                            Ремонтируемые устройства
+                        </button>
+                    </li>
+                    <li class="nav__list">
+                        <button type="button">
+                            Дополнительные услуги
+                        </button>
+                    </li>
+                    <li class="nav__list">
+                        <button type="button">
+                            Цены на услуги
+                        </button>
+                    </li>
+                    <li class="nav__list">
+                        <button type="button">
+                            Адреса сервисных центров
+                        </button>
+                    </li>
+                    <li class="nav__list">
+                        <button type="button">
+                            Специальные цены
+                        </button>
+                    </li>
+                    <li class="nav__list">
+                        <button type="button">
+                            Отзывы
+                        </button>
+                    </li>
+                </ul>
+            </nav>
         </div>
+     
 
         <section class="content">
             <div class="content__about">
-               Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
                 отремонтировать свой ноутбук Dell с официальной гарантией производителя.
 
                 <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
@@ -127,6 +138,7 @@
         </section>
 
 
+    </div>   
     </main>
 
 
