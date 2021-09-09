@@ -10,30 +10,21 @@
 
 @font-face {
    font-family: 'TT Lakes Bold';
-   src: url('TTLakes-Bold.eot');
-   src: url('TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-      url('TTLakes-Bold.woff') format('woff'),
-      url('TTLakes-Bold.ttf') format('truetype');
-   font-weight: normal;
    font-style: normal;
+   font-weight: 700;
+   src: local("TT Lakes"), url("../fonts/TTLakes-Bold.woff") format("woff");
 }
 
 @font-face {
    font-family: 'TT Lakes Medium';
-   src: url('TTLakes-Medium.eot');
-   src: url('TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
-      url('TTLakes-Medium.woff') format('woff'),
-      url('TTLakes-Medium.ttf') format('truetype');
+   src: local("TT Lakes"), url("../GPS/fonts/TTLakes-Medium.woff") format("woff");
    font-weight: normal;
    font-style: normal;
 }
 
 @font-face {
    font-family: 'TT Lakes Regular';
-   src: url('TTLakes-Regular.eot');
-   src: url('TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-      url('TTLakes-Regular.woff') format('woff'),
-      url('TTLakes-Regular.ttf') format('truetype');
+   src: local("TT Lakes"), url("../GPS/fonts/TTLakes-Regular.woff") format("woff");
    font-weight: normal;
    font-style: normal;
 }
@@ -90,6 +81,7 @@ left:-20px;
    font-family: 'TT Lakes Medium', Arial, Helvetica;
    font-size: 16px;
    border:2px solid transparent;
+   cursor: pointer;
   
 }
 
@@ -99,6 +91,7 @@ left:-20px;
    border-radius: 50%;
    background-color:var(--button-color);
    border:none;
+   cursor: pointer;
 }
 
 
@@ -113,7 +106,8 @@ left:-20px;
    list-style-type: none;
    display: flex;
    justify-content: flex-start;
-   overflow: scroll;
+   overflow-x: scroll;
+   overflow-y: hidden;
    border: none;
    padding-left: 0px;
    align-items: flex-start;
@@ -161,7 +155,7 @@ margin:0 auto;
    content: url('../GPS/img/highlight.png');
    position: absolute;
   margin-right: 40px;
-   top: 85px;
+   top: 75px;
    left:0px;
 }
 
@@ -174,7 +168,7 @@ margin:0 auto;
 .content__about {
    font-family: 'TT Lakes Regular', Arial, Helvetica;
    font-size: 14px;
-   width: 288px;
+   max-width: 288px;
    height: 90px;
    overflow: hidden;
    margin-left: 16px;
@@ -201,7 +195,7 @@ margin-right: 20px;
 margin-left: 20px;
 }
 
-.end-buttons-discripton-1, .end-buttons-discripton-2{
+.end-buttons-discripton{
    display: none;
 }
 
@@ -263,16 +257,17 @@ flex-grow:1;
    }
 
    .content__about {
-      width: 312px;
+      max-width: 312px;
       height: 140px;
       margin-top: 32px;
-      overflow: hidden;
+      overflow-x: scroll;
+      overflow-y: hidden;
       margin-left: 24px;
       margin-top: 12px;
    }
 
    .content__read-more {
-      width: 200px;
+      max-width: 200px;
       height: 24px;
       align-self: flex-start;
       margin-left: 10px;
@@ -320,24 +315,12 @@ flex-grow:1;
 margin-right:45px;
 }
 
-
-.end-buttons-discripton-1{
+.end-buttons-discripton{
    display: inline;
    transform: translate(-8px, 10px);
    font-size: 16px;
    font-family: 'TT Lakes Medium',Arial, Helvetica;
-
 }
-.end-buttons-discripton-2{
-   display: inline;
-transform: translate(-8px, 10px);
-font-size: 16px;
-font-family: 'TT Lakes Medium',Arial, Helvetica;
-}
-
-
-
-
   .nav__item{
    flex-wrap: wrap;
    overflow: hidden;
@@ -349,7 +332,7 @@ font-family: 'TT Lakes Medium',Arial, Helvetica;
    }
 
    .content__about{
-      width: 490px;
+      min-width: 490px;
       height: 160px;
    }
 
@@ -360,7 +343,7 @@ font-family: 'TT Lakes Medium',Arial, Helvetica;
   
    .heading h1::before {
       content: url('../GPS/img/highlight.png');
-      top: 20px;
+      top: 15px;
       left:0px;
    }
    .nav-right::before{
