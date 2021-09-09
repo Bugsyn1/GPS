@@ -4,35 +4,26 @@
    --border-cian: #B8FFEC;
    --basic-grey: #7E7E82;
    --background-color: #F2F2F2;
-}
-
-
+   --button-color:#FF3E79;
+ }
+ 
 @font-face {
    font-family: 'TT Lakes Bold';
-   src: url('TTLakes-Bold.eot');
-   src: url('TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-      url('TTLakes-Bold.woff') format('woff'),
-      url('TTLakes-Bold.ttf') format('truetype');
-   font-weight: normal;
    font-style: normal;
+   font-weight: 700;
+   src: local("TT Lakes"), url("../fonts/TTLakes-Bold.woff") format("woff");
 }
 
 @font-face {
    font-family: 'TT Lakes Medium';
-   src: url('TTLakes-Medium.eot');
-   src: url('TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
-      url('TTLakes-Medium.woff') format('woff'),
-      url('TTLakes-Medium.ttf') format('truetype');
+   src: local("TT Lakes"), url("../GPS/fonts/TTLakes-Medium.woff") format("woff");
    font-weight: normal;
    font-style: normal;
 }
 
 @font-face {
    font-family: 'TT Lakes Regular';
-   src: url('TTLakes-Regular.eot');
-   src: url('TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-      url('TTLakes-Regular.woff') format('woff'),
-      url('TTLakes-Regular.ttf') format('truetype');
+   src: local("TT Lakes"), url("../GPS/fonts/TTLakes-Regular.woff") format("woff");
    font-weight: normal;
    font-style: normal;
 }
@@ -40,11 +31,18 @@
 .body {
    margin: 0;
    padding: 0;
-   
 }
 
 .wrapper{
    max-width: 320px;
+}
+.menu-header__button, .footer__button{
+   width:40px;
+   height:40px;
+   border-radius: 50%;
+   background-color:var(--button-color);
+   border:none;
+   cursor: pointer;
 }
 
 .menu-header__list {
@@ -61,21 +59,21 @@
    margin-right: 17px;
 }
 
-.menu-header__item:nth-child(2) {
+.menu-header__logo{
    flex-grow: 1;
-   
 }
 
 .menu-header__item:nth-child(3) {
    margin-right: 24px;
 }
 
-.wrap-main {
-   /*Обертка main*/
+.content {
+  
    margin-left: 24px;
    margin-bottom: 264px;
    display: flex;
   flex-direction: column;
+
 }
 
 .content__list {
@@ -99,7 +97,7 @@
    margin-bottom: 32px;
 }
 
-button {
+.content__button {
    border: none;
    outline: none;
    background: transparent;
@@ -108,7 +106,7 @@ button {
  
 }
 
-button:hover, :focus{
+.content__button:hover, :focus{
   opacity: 0.5;
   transition-duration: 0.7s;
 }
@@ -116,7 +114,7 @@ button:hover, :focus{
 .wrap-footer{
    margin-left: 24px;
 }
-.menu-footer__list{
+.footer__list{
    margin-left: 0;
    padding-left: 0;
    display: flex;
@@ -124,7 +122,7 @@ button:hover, :focus{
    align-items: center;
 
 }
-.menu-footer__item{
+.footer__item{
 margin-right: 16px;
 }
 
