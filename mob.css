@@ -52,6 +52,7 @@
    margin-left: 0;
    padding-left: 0;
    align-items: center;
+   margin-bottom: 50px;
 }
 
 .menu-header__item:nth-child(1) {
@@ -67,23 +68,21 @@
    margin-right: 24px;
 }
 
-.content {
-  
+.main-menu {
    margin-left: 24px;
    margin-bottom: 264px;
    display: flex;
   flex-direction: column;
-
 }
 
-.content__list {
+.main-munu__list {
    /*Список*/
    margin-left: 0;
    padding-left: 0;
-
+margin-bottom:270px;
 }
 
-.content__item:nth-child(1)::before {
+.main-munu__item:nth-child(1)::before {
    content: url("../GPS/img/highlight.svg");
    display: block;
    transform: translate(-25px, 20px);
@@ -92,24 +91,37 @@
 
 }
 
-.content__item {
+.main-menu__item {
    list-style-type: none;
    margin-bottom: 32px;
 }
+.main-menu__list{
+padding:0px;
+margin:0px;
 
-.content__button {
-   border: none;
-   outline: none;
-   background: transparent;
-   font-size: 16px;
-   font-family: "TT Lakes Medium", Helvetica, sans-serif;  
- 
 }
 
-.content__button:hover, :focus{
+.main-menu__link  {
+   display: block;
+  text-decoration: none;
+   font-size: 16px;
+   color: var(--basic-black);
+   font-family: "TT Lakes Medium", Helvetica, sans-serif;  
+   text-decoration: none;
+}
+
+.main-menu__link:hover, :focus{
   opacity: 0.5;
   transition-duration: 0.7s;
 }
+
+.main-menu__link:hover:before{
+content: url("../GPS/img/highlight.svg");
+position: absolute;
+left:0px;
+margin-top:-10px;
+}
+
 
 .wrap-footer{
    margin-left: 24px;
