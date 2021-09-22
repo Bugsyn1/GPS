@@ -51,6 +51,32 @@ body {
   padding: 0;
 }
 
+.brand-img{
+  margin-left: 16px;
+}
+.brand{
+  display: flex;
+  background:none;
+  border:none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 16px;
+  margin-left: auto;
+ 
+}
+
+.brand::after{
+content:url('../GPS/img/dropdown.svg');
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+border:2px solid var(--button-color);
+
+}
+
 .container {
 
   max-width: 300px;
