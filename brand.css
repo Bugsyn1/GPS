@@ -52,11 +52,11 @@ body {
 }
 
 
-.brand{
+.brand {
   display: flex;
   background: white;
   border-radius: 6px;
-  border:2px solid #eaeaea;
+  border: 2px solid #eaeaea;
   align-items: center;
   justify-content: space-between;
   padding: 20px 16px;
@@ -65,15 +65,15 @@ body {
   margin-right: 16px;
 }
 
-.brand::after{
-content:url('../GPS/img/dropdown.svg');
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius: 50%;
-width: 40px;
-height: 40px;
-border:2px solid var(--button-color);
+.brand::after {
+  content: url('../GPS/img/dropdown.svg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--button-color);
 
 }
 
@@ -130,7 +130,6 @@ ul {
 
 .btn-hide::before {
   transform: rotate(180deg);
-
 }
 
 
@@ -138,22 +137,19 @@ ul {
   .container {
     max-width: 768px;
     margin: 0 auto;
-
   }
 
   .swiper-wrapper {
     flex-wrap: wrap;
 
   }
-
-
   .swiper-slide {
-width: auto;
-height: auto;
-
+    width: auto;
+    height: auto;
+    margin: 16px 0px;
   }
 
- 
+
 
   .swiper-pagination {
     display: none;
@@ -171,14 +167,6 @@ height: auto;
     margin-left: 32px;
   }
 
-  .hide {
-    display: none;
-  }
-  .swiper-slide {
-    margin: 16px 0px;
-   
-    box-shadow: none;
-  }
 }
 
 .show-all::before {
@@ -187,20 +175,19 @@ height: auto;
 
 }
 
-
 @media (min-width:1120px) {
-.heading{
-  margin-left:32px;
-}
-
   .container {
     max-width: 1120px;
   }
 
   .swiper-slide {
-    margin: 16px 0px;
-    margin-left: 32px;
+    
+    height: auto;
     box-shadow: none;
   }
 
+}
+
+.hide {
+  display: none;
 }
