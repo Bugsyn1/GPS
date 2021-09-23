@@ -5,7 +5,6 @@ let tablet = window.matchMedia('(min-width: 768px) and (max-width: 1119px)');
 let desktop = window.matchMedia('(min-width: 1120px)');
 
 function swiperMode() {
-
     if (mobile.matches) {
         if (!init) {
             init = true;
@@ -41,18 +40,17 @@ window.addEventListener('load', function () {
 
 window.addEventListener('resize', function () {
     swiperMode();
+  
 });
 
 
-let allElem = document.querySelectorAll('.swiper-slide');
+
 if (tablet.matches) {
-    for (let i = allElem.length - 1; i >= 6; i--) {
-          
-    allElem[i].classList.add('hide');
-
+    let allElem = document.querySelectorAll('.swiper-slide');
+    console.log(allElem)
+    for (let i = allElem.length -1; i >= 6; i--) {
+        allElem[i].classList.add('hide');
     }
-
-
 }
 
 let btn = document.querySelector('.show-all');
